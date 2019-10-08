@@ -1,3 +1,5 @@
+composition_set = set()
+
 def numbers_generator(k_pos,tup,n):
     if k_pos > len(tup)-1:
         return
@@ -15,7 +17,7 @@ def check_for_sum(arr,n):
     if sum(arr) == n:
         composition_set.add(tuple(arr))
 
-composition_set = set()
+
 def compositions(k, n):
     # inputs: k and n are of type 'int'
     # output: a set of tuples
