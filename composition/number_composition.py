@@ -24,4 +24,17 @@ def compositions(k, n):
     gen(0,np.ones([1,k],dtype=np.int8).ravel(),n)
     return composition_set
     
- print(compositions(3, 7))
+print(compositions(3, 7))
+len(composition_set)
+
+
+#################################################################################################
+
+# finding number of compositions for a given number with binomial theorm
+
+import math
+def binomial(k,n):
+    fun = math.factorial
+    return fun(n-1)/(fun(k-1)*fun(n-1-k+1))
+    
+print(binomial(3,10))    
