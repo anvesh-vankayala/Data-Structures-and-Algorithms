@@ -21,7 +21,7 @@ def check_for_sum(arr,n):
 def compositions(k, n):
     # inputs: k and n are of type 'int'
     # output: a set of tuples
-    gen(0,np.ones([1,k],dtype=np.int8).ravel(),n)
+    numbers_generator(0,np.ones([1,k],dtype=np.int8).ravel(),n)
     return composition_set
     
 print(compositions(3, 7))
