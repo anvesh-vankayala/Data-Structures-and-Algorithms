@@ -7,7 +7,7 @@ func_out = compositions(3,4)
 
 print "all possible combinations: "
 print_compositions(func_out)
-print;print "Actual Output from compositions(3,4)"; func_out
+print "Actual Output from compositions(3,4)"; func_out
 ```
 
 
