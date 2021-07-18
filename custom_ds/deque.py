@@ -20,7 +20,6 @@ class Deque:
             holder = self.head
             self.head = Node(next = holder, data = key)
             holder.prev = self.head
-            #self.tail = holder
         self.length += 1
         return 'ok'
 
