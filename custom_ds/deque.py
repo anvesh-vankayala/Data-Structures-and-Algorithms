@@ -1,9 +1,11 @@
+## Linked list
 class Node:
     def __init__(self,prev=None, next = None, data= None) -> None:
         self.prev = prev
         self.next = next
         self.data = data
 
+## Deque implemented with linked list 
 class Deque:
 
     def __init__(self):
@@ -103,6 +105,20 @@ def process_deque(commands):
 #process_deque(["push_front 1","push_front 2","push_back 6","front","back","clear","size","back"])
 #process_deque(["pop_front", "back", "push_back 2", "size"])
 #process_deque(["push_back 1", "push_front 10", "push_front 4", "push_front 5", "back", "pop_back", "pop_back", "back"])
+
+
+# test_cmd = ["push_front 1", "push_front 2", "push_back 6", "front", "back", "clear", "size", "back"]
+# # should print ["ok", "ok", "ok", 2, 6, "ok", 0, "error"]
+# print(process_deque(test_cmd))
+
+# test_cmd = ["pop_front", "back", "push_back 2", "size"]
+# # should print ["error", "error", "ok", 1]
+# print(process_deque(test_cmd))
+
+# test_cmd = ["push_back 1", "push_front 10", "push_front 4", "push_front 5", "back", "pop_back", "pop_back", "back"]
+# # should print ["ok", "ok", "ok", "ok", 1, 1, 10, 4]
+# print(process_deque(test_cmd))
+
 
 # dq = Deque()
 # print(dq.push_front(1))
