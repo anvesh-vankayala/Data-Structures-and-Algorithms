@@ -21,16 +21,16 @@ def threeSum(li: List[int]) -> List[List[int]]:
         k = len(li)-1
         
         while j<k:
-            res = -(li[j]+ li[k])
-            if li[i] == res:
+            three_sum = li[i]+li[j]+li[k]
+            if three_sum == 0:
                 op_li.append([li[i],li[j],li[k]])
                 j+=1
                 k-=1
                 while j<k and li[j] == li[j-1] : j+=1
                 while j<k and li[k] == li[k+1] : k-=1
-            elif li[i] < res:
+            elif three_sum > 0:
                 k-=1
-            else: # li[i] > res
+            else: # three_sum < 0
                 j+=1
              
     return op_li
