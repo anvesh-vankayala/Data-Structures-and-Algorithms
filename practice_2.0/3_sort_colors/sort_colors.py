@@ -10,6 +10,8 @@
 ## index mid to high : unsorted part of list.
 ## index high + 1 to n - 1 : 2's
 
+ # Time Complexity : O(n)
+ # Space Complexity : O(1)
 
 from typing import List
 
